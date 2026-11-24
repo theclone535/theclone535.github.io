@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tony | Game developer</title>
+  <meta name="description" content="Games and tools by Tony, a game development student working in Unreal Engine 5 and Unity.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" data-site="name">Tony</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <h1 data-site="tagline"></h1>
+      <p class="lede" data-site="intro"></p>
+    </section>
+
+    <!-- Project select screen. Everything inside is built from js/projects.js -->
+    <section id="projects" class="select" aria-labelledby="projects-heading">
+      <div class="section-head">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="filters" role="group" aria-label="Filter projects"></div>
+      </div>
+
+      <div class="select-body">
+        <div class="menu-wrap">
+          <div class="cursor" aria-hidden="true"></div>
+          <ul class="menu" id="menu"></ul>
+          <p class="empty" hidden>No projects in this category yet.</p>
+        </div>
+
+        <!-- Large preview of the highlighted project (desktop only) -->
+        <aside class="preview" aria-hidden="true">
+          <button class="preview-media" type="button" tabindex="-1"></button>
+          <h3 class="preview-title"></h3>
+          <p class="preview-summary"></p>
+          <dl class="facts preview-facts"></dl>
+          <button class="btn preview-open" type="button" tabindex="-1">Open project</button>
+        </aside>
+      </div>
+
+      <p class="hint">
+        <span class="hint-keys">Use the arrow keys to move through the list, and Enter to open a project.</span>
+        <span class="hint-touch">Tap a project to see the details.</span>
+      </p>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="section-head">
+        <h2 id="about-heading">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" id="about-text"></div>
+        <dl class="skills" id="skills"></dl>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="section-head">
+        <h2 id="contact-heading">Contact</h2>
+      </div>
+      <ul class="contact-list" id="contact-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> <span data-site="name">Tony</span>. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <!-- Project detail window -->
+  <dialog id="project-dialog" aria-labelledby="dlg-title">
+    <div class="dlg-bar">
+      <button class="dlg-close" type="button">Close</button>
+    </div>
+    <div class="dlg-media"></div>
+    <div class="dlg-body">
+      <h2 id="dlg-title"></h2>
+      <p class="dlg-summary"></p>
+      <dl class="facts dlg-facts"></dl>
+      <h3 class="dlg-points-heading">What I did</h3>
+      <ul class="dlg-points"></ul>
+      <div class="dlg-links"></div>
+      <p class="dlg-credits"></p>
+    </div>
+  </dialog>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
