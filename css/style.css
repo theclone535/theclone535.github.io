@@ -57,11 +57,28 @@ a { color: inherit; }
 .skip:focus { left: 1rem; }
 
 /* ------------------------------------------------------------
+   Code background
+   ------------------------------------------------------------ */
+.code-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.2s linear;
+}
+
+/* ------------------------------------------------------------
    Header, layout
    ------------------------------------------------------------ */
 .site-header,
 main,
 .site-footer {
+  position: relative;
+  z-index: 1;
+  /* A soft halo the colour of the page keeps text readable over the code */
+  text-shadow: 0 0 3px var(--fog), 0 0 6px var(--fog), 0 0 10px var(--fog);
   max-width: 1200px;
   margin: 0 auto;
   padding-left: var(--gutter);
@@ -150,6 +167,7 @@ main,
 .filters button[aria-pressed="true"] {
   color: var(--paper);
   background: var(--ink);
+  text-shadow: none;
 }
 /* clip-path hides outlines, so draw focus inside the shape */
 .filters button:focus-visible {
@@ -218,7 +236,7 @@ main,
   transform-origin: left center;
   transition: transform 0.15s ease-out;
 }
-.menu-item.is-active { color: var(--ink); }
+.menu-item.is-active { color: var(--ink); text-shadow: none; }
 .menu-item.is-active::before { transform: translateY(-50%) scaleX(1); }
 .menu-item:focus-visible { outline-offset: -3px; }
 
@@ -321,6 +339,7 @@ main,
   color: var(--paper);
   font: 600 1rem/1 var(--display);
   text-decoration: none;
+  text-shadow: none;
   cursor: pointer;
   clip-path: var(--chamfer);
 }
