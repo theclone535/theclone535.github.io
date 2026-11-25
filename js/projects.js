@@ -5,8 +5,8 @@
    ============================================================= */
 
 const SITE = {
-  name: "Tony",
-  tagline: "I make games, and the tools that help build them.",
+  name: "Connor",
+  tagline: "I Program games, and tools",
   intro:
     "Game development student in Australia. I work in Unreal Engine 5 and Unity, across C++, Blueprints, C# and Python.",
 
@@ -17,17 +17,17 @@ const SITE = {
   ],
 
   skills: {
-    Engines: ["Unreal Engine 5", "Unity", "Autodesk Maya"],
+    Engines: ["Unreal Engine 5", "Unity"],
     Languages: ["C++", "Blueprints", "C#", "Python"],
     "Comfortable with": ["Behavior Trees", "Editor tools", "Spline tools", "Publishing on itch.io"],
   },
 
   // Leave url as "" to hide a row.
   contact: [
-    { label: "Email",   text: "you@example.com",           url: "mailto:you@example.com" },
-    { label: "itch.io", text: "your-name.itch.io",         url: "https://your-name.itch.io" },
-    { label: "GitHub",  text: "github.com/your-username",  url: "https://github.com/your-username" },
-    { label: "LinkedIn", text: "",                         url: "" },
+    { label: "Email",   text: "Larkamconnor@gmail.com",           url: "larkamconnor@gmail.com" },
+    { label: "itch.io", text: "theclone535.itch.io",         url: "https://theclone535.itch.io" },
+    { label: "GitHub",  text: "github.com/theclone535",  url: "https://github.com/theclone535" },
+    { label: "LinkedIn", text: "linkedin.com/Connor-larkam", url: "https://www.linkedin.com/in/connor-larkam-327b02390/" },
   ],
 };
 
@@ -69,19 +69,19 @@ const PROJECTS = [
     points: [
       "Joined the team mid-development to fix and extend the demon dog's AI.",
       "Built an idle timer that tracks how long the player has been hiding, so the dog can narrow in on their location and start checking nearby rooms.",
-      "Set up the start of each hunt, where the dog runs up from outside and enters through a window.",
+      "increased the dogs behaviours so that it can sniff, hear, destroy hidingspots and has its stats enhanced when you dont keep it underr control.",
     ],
     image: "",
     youtube: "",
-    links: [],
+    links: [label: "Play on itch.io", url: "https://hotdogscc.itch.io/foster-dogs" },],
     credits: "",
     color: "#3A2C3E",
   },
   {
     title: "FingerGun",
     engine: "Unity",
-    year: "2026",
-    role: "Solo developer",
+    year: "2026, for the 2 day UTS Game jam",
+    role: "Game systems programmer, Team Project",
     builtWith: ["C#"],
     filters: ["unity"],
     summary:
@@ -100,7 +100,7 @@ const PROJECTS = [
   {
     title: "A Lone Adventure",
     engine: "Unity",
-    year: "",
+    year: "2023",
     role: "Solo developer",
     builtWith: ["C#", "2D"],
     filters: ["unity"],
@@ -114,7 +114,7 @@ const PROJECTS = [
     image: "",
     youtube: "",
     links: [
-      { label: "Play on itch.io", url: "" }, // paste your itch.io game link here
+      { label: "Play on itch.io", url: "https://theclone535.itch.io/a-lone-adventure" }, // paste your itch.io game link here
     ],
     credits: "Music: Eric Skiff - A Night Of Dizzy Spells - Available at http://EricSkiff.com/music",
     color: "#3D4A2B",
@@ -158,5 +158,25 @@ const PROJECTS = [
     links: [],
     credits: "",
     color: "#2E3F3C",
+  },
+  {
+    title: "Dweezil",
+    engine: "Unreal Engine 5",
+    year: "2025",
+    role: "Gameplay Mechanics Programmer, team project",
+    builtWith: ["Blueprints"],
+    filters: ["unreal"],
+    summary:
+      "A 3D Yahtzee board game roguelike, roll 5 dice for score but also use the same dice for movement.",
+    points: [
+      "traverse a board where you roll dice and stor combinations to get the highest score possible",
+      "traverse the board with the use of powerups and oppurtunities to make your run legendary",
+      "built entirely in unreal blueprints",
+    ],
+    image: "",
+    youtube: "",
+    links: [{ label: "Play on itch.io", url: "https://ellacoco.itch.io/dweezil" }],
+    credits: "",
+    color: "#3A2C3E",
   },
 ];
