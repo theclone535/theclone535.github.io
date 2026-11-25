@@ -6,7 +6,7 @@
 
 const SITE = {
   name: "Connor",
-  tagline: "I Program games, and tools",
+  tagline: "Game Programmer for games, and tools",
   intro:
     "Game development student in Australia. I work in Unreal Engine 5 and Unity, across C++, Blueprints, C# and Python.",
 
