@@ -24,7 +24,7 @@ const SITE = {
 
   // Leave url as "" to hide a row.
   contact: [
-    { label: "Email",   text: "Larkamconnor@gmail.com",           url: "larkamconnor@gmail.com" },
+    { label: "Email",   text: "Larkamconnor@gmail.com",           url: "mailto:larkamconnor@gmail.com" },
     { label: "itch.io", text: "theclone535.itch.io",         url: "https://theclone535.itch.io" },
     { label: "GitHub",  text: "github.com/theclone535",  url: "https://github.com/theclone535" },
     { label: "LinkedIn", text: "linkedin.com/Connor-larkam", url: "https://www.linkedin.com/in/connor-larkam-327b02390/" },
@@ -69,7 +69,7 @@ const PROJECTS = [
     points: [
       "Joined the team mid-development to fix and extend the demon dog's AI.",
       "Built an idle timer that tracks how long the player has been hiding, so the dog can narrow in on their location and start checking nearby rooms.",
-      "increased the dogs behaviours so that it can sniff, hear, destroy hidingspots and has its stats enhanced when you dont keep it underr control.",
+      "increased the dogs behaviours so that it can sniff, hear, destroy hiding spots and has its stats enhanced when you don't keep it under control.",
     ],
     image: "",
     youtube: "",
@@ -167,16 +167,16 @@ const PROJECTS = [
     builtWith: ["Blueprints"],
     filters: ["unreal"],
     summary:
-      "A 3D Yahtzee board game roguelike, roll 5 dice for score but also use the same dice for movement.",
+      "A 3D roguelike board game built around Yahtzee. Each turn you roll five dice, and that same roll decides both your score and how far you move, so every roll counts twice.",
     points: [
-      "traverse a board where you roll dice and stor combinations to get the highest score possible",
-      "traverse the board with the use of powerups and oppurtunities to make your run legendary",
-      "built entirely in unreal blueprints",
+      "Programmed the dice system in Blueprints: rolling five dice and scoring combinations on a Yahtzee-style scorecard",
+      "Added power-ups and board events that give players more ways to build a high-scoring run.",
+      "Programmed the dice system in Blueprints: rolling five dice and scoring combinations on a Yahtzee-style scorecard",
     ],
     image: "",
     youtube: "",
     links: [{ label: "Play on itch.io", url: "https://ellacoco.itch.io/dweezil" }],
     credits: "",
-    color: "#3A2C3E",
+    color: "#2F3550",
   },
 ];
