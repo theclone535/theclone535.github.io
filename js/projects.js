@@ -73,7 +73,7 @@ const PROJECTS = [
     ],
     image: "",
     youtube: "",
-    links: [label: "Play on itch.io", url: "https://hotdogscc.itch.io/foster-dogs" },],
+    links: [{label: "Play on itch.io", url: "https://hotdogscc.itch.io/foster-dogs" },],
     credits: "",
     color: "#3A2C3E",
   },
