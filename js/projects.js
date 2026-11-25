@@ -78,26 +78,6 @@ const PROJECTS = [
     color: "#3A2C3E",
   },
   {
-    title: "FingerGun",
-    engine: "Unity",
-    year: "2026, for the 2 day UTS Game jam",
-    role: "Game systems programmer, Team Project",
-    builtWith: ["C#"],
-    filters: ["unity"],
-    summary:
-      "A shooter where you load up to three bullet effects before each shot. The order you load them decides how they chain together every time the bullet hits a wall.",
-    points: [
-      "Wrote the FingerGun system that chains Ricochet, Pierce, Splitter, Explosion and Sticky Nade effects on wall hits.",
-      "Made bullets pass through enemies, so a single shot can travel on through a room.",
-      "Split each turn into bullet selection, aiming and a map view.",
-    ],
-    image: "",
-    youtube: "",
-    links: [],
-    credits: "",
-    color: "#24405A",
-  },
-  {
     title: "A Lone Adventure",
     engine: "Unity",
     year: "2023",
